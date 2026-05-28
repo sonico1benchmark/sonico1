@@ -31,12 +31,15 @@ pip install -r requirements.txt
 **Model-Specific Environments:** Some models require specialized dependencies and have their own virtual environments. Only use these if you're running the specific models listed below:
 
 Available model-specific environments (see `models_requirements/` directory):
-- `venv_llama` - For Video-LLaMA models
-- `venv_minicpm` - For MiniCPM-V models
+- `venv_llama` - For Video-LLaMA2 models
+- `venv_minicpm` - For MiniCPM-2.6-o models
 - `venv_phi4` - For Phi-4 Vision models
-- `venv_unimoe` - For Uni-MoE models
-- `venv_vita` - For VITA models
-
+- `venv_unimoe` - For Uni-MoE 2.0 models
+- `venv_vita` - For VITA 1.5 models
+- `omnivinci` - For omnivinci models
+- `ola` - For OLA models
+- `baichuan` - For Baichuan-Omni 1.5 models
+- 
 Example activation for model-specific environments:
 ```bash
 # Activate environment for Video-LLaMA
@@ -161,7 +164,7 @@ python 05_evaluation_inference/metrics/compute_metrics.py \
 
 ## Notes
 
-- **Environment Management**: Most models work with the general environment defined in `../pyproject.toml`. Only use model-specific environments (in `models_requirements/`) when running models with special requirements (Uni-MoE, VITA, Video-LLaMA, MiniCPM-V, Phi-4). Mismatched environments will cause import errors or compatibility issues.
+- **Environment Management**: Most models work with the general environment defined in `../pyproject.toml`. Only use model-specific environments (in `models_requirements/`) when running models with special requirements (Uni-MoE 2.0, OLA, Omnivinci, Baichuan VITA 1.5, Video-LLaMA2, MiniCPM-2.6-o, Phi-4). Mismatched environments will cause import errors or compatibility issues.
 
 - **Path Resolution**: All scripts expect to be run from the `sonic-o1` parent directory to properly resolve relative imports and data paths.
 
