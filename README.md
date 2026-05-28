@@ -120,6 +120,8 @@ python run_evaluation.py \
 | Uni-MoE-2 | |
 | MiniCPM-o-2.6 | |
 | Qwen3-Omni | |
+| OLA | |
+| Baichuan-Omni 1.5 | |
 
 ---
 
